@@ -134,7 +134,7 @@ def render_pages(items: List[Recipient]):
         youtube_embed_url = _youtube_embed(it.video_url) if (it.video_url and it.video_type == "youtube") else ""
 
         html = tpl.render(
-            base_url="",
+            base_url="/qr-gifts/",
             title=it.title,
             to_name=it.to_name,
             message=it.message,
