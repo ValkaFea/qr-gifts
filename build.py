@@ -175,7 +175,7 @@ def main():
     items = load_recipients(DATA)
     copy_static()
     render_pages(items)
-    make_index(items)
+    # make_index(items)  # <- УБРАТЬ, чтобы не перезаписывать docs/index.html
 
     print(f"OK: generated pages in {DOCS}")
     print(f"OK: qr codes in {OUT_QR} (not committed)")
